@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Decay-game.sln"
+    "dotnet.defaultSolution": "DiscordJam2024.sln"
 }
