@@ -6,6 +6,8 @@ public class Enemy : MonoBehaviour, IHasHealth
 {
     public float Health = 100;
     public float MaxHealth = 100;
+
+    public float damaeAmount = 10;
     
 
     // Start is called before the first frame update
@@ -43,9 +45,17 @@ public class Enemy : MonoBehaviour, IHasHealth
 
     }
     private void OnCollisionEnter2D(Collision2D other) {
-        ProjectileSO projectileSO = other.gameObject.GetComponent<Projectiles>().GetProjectileSO();
-        TookDamage(projectileSO.damage);
-        Destroy(other.gameObject);
+        // TODO: ignore anything other than projectile.
+        if(other.gameObject.CompareTag("PROJECTILE")){
+            ProjectileSO projectileSO = other.gameObject.GetComponent<Projectiles>().GetProjectileSO();
+            if(projectileSO != null){
+                TookDamage(projectileSO.damage);
+                Destroy(other.gameObject);
+            }
+
+        }
+        
+        
     }
 
 }
