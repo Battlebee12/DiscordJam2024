@@ -2,26 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : HealthEntity,IHasHealth
+public class LvlHeart : HealthEntity, IHasHealth
 {
-    // public float Health = 100;
-    // public float MaxHealth = 100;
 
-    public float damaeAmount = 10;
-    
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Health = 100f;
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void TookDamage(float damageAmount){
         Health = Health - damageAmount;
@@ -57,5 +40,4 @@ public class Enemy : HealthEntity,IHasHealth
         
         
     }
-
 }

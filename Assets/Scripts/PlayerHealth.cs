@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour, IHasHealth
+public class PlayerHealth : HealthEntity, IHasHealth
 {
-    public float Health = 100;
-    public float MaxHealth = 100;
+    
 
     public float invisTime = 2f;
     private bool invis = false;
