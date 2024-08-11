@@ -14,6 +14,12 @@ public class Shoot_Projectile : MonoBehaviour
         P3
     }
     public ProjectileType currentProjectile;
+    public float shootFrequency = 2;
+    public float bulletsPerShot = 5;
+    private void Start() {
+        InvokeRepeating("ShootWithDelay",0.01f, shootFrequency);
+        
+    }
     
 
     private void Update() {
@@ -29,9 +35,7 @@ public class Shoot_Projectile : MonoBehaviour
                 break;    
         }
 
-        if(Input.GetMouseButtonDown(0)){
-            Shoot(startPoint,projectileSO);
-        }
+        //Invoke("ShootMultipleTimes", shootFrequency);
     }
    public void Shoot(Transform startPoint, ProjectileSO projectileSO)
     {
@@ -55,4 +59,18 @@ public class Shoot_Projectile : MonoBehaviour
         // Set the projectile's lifetime
         Destroy(projectile, projectileSO.lifetime);
     }
+    IEnumerator ShootMultipleTimes()
+    {
+        for (int i = 0; i < bulletsPerShot; i++)
+        {
+           Shoot(startPoint,projectileSO); // Call the Shoot method
+            yield return new WaitForSeconds(0.2f); // Wait for 0.5 seconds before the next shot
+        }
+    }
+    private void ShootWithDelay(){
+        StartCoroutine(ShootMultipleTimes());
+    }
+
+
+
 }

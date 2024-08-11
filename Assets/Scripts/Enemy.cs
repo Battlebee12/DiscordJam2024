@@ -8,12 +8,15 @@ public class Enemy : HealthEntity,IHasHealth
     // public float MaxHealth = 100;
 
     public float damaeAmount = 10;
+    private UpgradeManager upgradeManager;
     
 
     // Start is called before the first frame update
     void Start()
     {
         // Health = 100f;
+        upgradeManager = GameObject.FindGameObjectWithTag("MANAGER").GetComponent<UpgradeManager>();
+
         
     }
 
@@ -41,11 +44,12 @@ public class Enemy : HealthEntity,IHasHealth
 
     }
     public void Died(){
+        upgradeManager.enemiesKilled++;
         Destroy(gameObject);
 
     }
     private void OnCollisionEnter2D(Collision2D other) {
-        // TODO: ignore anything other than projectile.
+        
         if(other.gameObject.CompareTag("PROJECTILE")){
             ProjectileSO projectileSO = other.gameObject.GetComponent<Projectiles>().GetProjectileSO();
             if(projectileSO != null){

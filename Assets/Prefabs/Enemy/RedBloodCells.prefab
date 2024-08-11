@@ -112,6 +112,10 @@ PrefabInstance:
       propertyPath: MaxHealth
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 3152181018433866450, guid: 1ce1448e85fe75e4cb9993f9cae7932f, type: 3}
+      propertyPath: damaeAmount
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3171330408227011694, guid: 1ce1448e85fe75e4cb9993f9cae7932f, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -163,6 +167,10 @@ PrefabInstance:
     - target: {fileID: 6013993481856916479, guid: 1ce1448e85fe75e4cb9993f9cae7932f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407436014301652110, guid: 1ce1448e85fe75e4cb9993f9cae7932f, type: 3}
+      propertyPath: maxSpeed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6416156839928587358, guid: 1ce1448e85fe75e4cb9993f9cae7932f, type: 3}
       propertyPath: m_Constraints

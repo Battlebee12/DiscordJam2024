@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8323852718986751593, guid: e5924ad356f4741418d234b173658ca2, type: 3}
   lifetime: 3
-  speed: 15
-  damage: 15
+  speed: 30
+  damage: 30
