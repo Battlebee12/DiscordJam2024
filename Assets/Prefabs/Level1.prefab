@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1919553606368196261}
   - component: {fileID: 2687701009606579646}
   - component: {fileID: 167899675894837612}
+  - component: {fileID: -6586669828482246101}
   m_Layer: 0
   m_Name: Level1
   m_TagString: Untagged
@@ -53,15 +54,33 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459289230016666129}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8363a6c04e98cab47a636367ef8a2610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemySpawner: {fileID: 2687701009606579646}
   playerTransform: {fileID: 0}
-  nerve: {fileID: 0}
   spawnRadius: 10
   maxEnimies: 10
   spawnFrequency: 2
+  currentEnimies: 0
+--- !u!114 &-6586669828482246101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459289230016666129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219e77539bce9954391aa80b2303307f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawner: {fileID: 2687701009606579646}
+  playerTransform: {fileID: 0}
+  nerve: {fileID: 0}
+  spawnRadius: 10
+  maxEnimies: 7
+  spawnFrequency: 1
   currentEnimies: 0

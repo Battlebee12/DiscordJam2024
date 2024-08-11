@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class PlayerHealth : HealthEntity, IHasHealth
 {
+    public GameObject gameOverScreen;
     
 
     public float invisTime = 2f;
     private bool invis = false;
+    [SerializeField] private PlayerVisuals animations;
     
 
     public void TookDamage(float damageAmount){
@@ -25,6 +27,7 @@ public class PlayerHealth : HealthEntity, IHasHealth
             Invoke("TurnOffInvis",invisTime);
   
         }
+        animations.TookHit();
          
     }
     public void Heal(float healAmount){
@@ -35,8 +38,11 @@ public class PlayerHealth : HealthEntity, IHasHealth
 
     }
     public void Died(){
-        // make it die.
+        // make it die
+        gameOverScreen.SetActive(true);
+
         Destroy(gameObject);
+
 
     }
     private void TurnOffInvis(){

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LvlHeart : HealthEntity, IHasHealth
 {
+    [SerializeField] private GameObject nextLevel;
 
 
     public void TookDamage(float damageAmount){
@@ -24,6 +25,7 @@ public class LvlHeart : HealthEntity, IHasHealth
 
     }
     public void Died(){
+        nextLevel.SetActive(true);
         Destroy(gameObject);
 
     }

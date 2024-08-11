@@ -15,5 +15,9 @@ MonoBehaviour:
   level1Enimies:
   - {fileID: 7448659077529702966, guid: ff22e885669f882478bfeb0fefd26a25, type: 3}
   - {fileID: 647137389398300360, guid: f5552a1187077f74691bdf631115c6e1, type: 3}
-  level2Enimies: []
-  level3Enimies: []
+  level2Enimies:
+  - {fileID: 7448659077529702966, guid: ff22e885669f882478bfeb0fefd26a25, type: 3}
+  - {fileID: 1998569501504654306, guid: a5951bc2df95c6b41828854429f6f66b, type: 3}
+  - {fileID: 132615201273900146, guid: da1055a4b7655734d92c9ff3bf763124, type: 3}
+  level3Enimies:
+  - {fileID: 3393790761197295579, guid: e5716b52aaeed3440b6d35651096da30, type: 3}

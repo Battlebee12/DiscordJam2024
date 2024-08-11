@@ -34,4 +34,20 @@ public class EnemySpawner : MonoBehaviour
         Instantiate(enemyList1[index],position,Quaternion.identity);
 
     }
+    public void SpawnEnemyLvl2(Vector3 position){
+        //TODO: Make it spawn mroe based on intensity
+
+        int index = UnityEngine.Random.Range(0,enemyList2.Length);
+
+        Instantiate(enemyList2[index],position,Quaternion.identity);
+
+    }
+    public void SpawnEnemyTut(Vector3 position){
+        //TODO: Make it spawn mroe based on intensity
+
+        int index = UnityEngine.Random.Range(0,enemyList3.Length);
+
+        Instantiate(enemyList3[index],position,Quaternion.identity);
+
+    }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossHealth :HealthEntity,IHasHealth
 {
+    public GameObject win;
 
     public void TookDamage(float damageAmount){
         Health = Health - damageAmount;
@@ -23,7 +24,7 @@ public class BossHealth :HealthEntity,IHasHealth
 
     }
     public void Died(){
-        
+        win.SetActive(true);
         Destroy(gameObject);
 
     }

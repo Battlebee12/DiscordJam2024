@@ -10,11 +10,19 @@ public class UpgradeManager : MonoBehaviour
     [SerializeField] private GameObject UpgradePanel2;
 
     public int enemiesKilled = 0;
+    private void Start() {
+        if(enemiesKilled == 6){
+            gun.currentProjectile = Shoot_Projectile.ProjectileType.P2;
+        }
+    }
     private void Update() {
         if(enemiesKilled == 5){
             Upgrade1();
             
-
+        }
+        if(enemiesKilled == 11){
+            Upgrade2();
+            
         }
     }
     private void Upgrade1(){
@@ -25,6 +33,19 @@ public class UpgradeManager : MonoBehaviour
         enemyManager.spawnFrequency = 0.5f;
         enemyManager.spawnRadius = 5;
         UpgradePanel1.SetActive(true);
+        pauseGame();
+        
+        StartCoroutine(ResumeAfterDelay(4f));
+        enemiesKilled++;
+    }
+    private void Upgrade2(){
+
+
+        gun.currentProjectile = Shoot_Projectile.ProjectileType.P3;
+        enemyManager.maxEnimies += 10;
+        enemyManager.spawnFrequency = 0.5f;
+        enemyManager.spawnRadius = 5;
+        UpgradePanel2.SetActive(true);
         pauseGame();
         
         StartCoroutine(ResumeAfterDelay(4f));
