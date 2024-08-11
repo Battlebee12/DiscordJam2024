@@ -13,7 +13,7 @@ public class Enemy : HealthEntity,IHasHealth
     // Start is called before the first frame update
     void Start()
     {
-        Health = 100f;
+        // Health = 100f;
         
     }
 

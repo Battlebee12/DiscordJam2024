@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8cdd615ccdecf4042b3291c280c15fa8
+guid: c86159969746a1b4b989472cacfe95e1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level_1_mouth-teeth_0
+      name: nerve_light_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39e60eee94a1b540bf620f874c2ea84
-      internalID: 1337906319
+      spriteID: ef2bf1c909e10204e8fa7a1fdc3e268c
+      internalID: -429244803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level_1_mouth-teeth_1
+      name: nerve_light_1
       rect:
         serializedVersion: 2
-        x: 24
+        x: 64
         y: 0
-        width: 24
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d6a307b95c7910469ad6ad622729fe4
-      internalID: 1109299790
+      spriteID: 4f79729b3caaa3047ad3d1b3ab562d26
+      internalID: -1964129514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nerve_light_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d85e3a404528b4399624fbf062bcf7
+      internalID: -495745584
       vertices: []
       indices: 
       edges: []
@@ -149,8 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      level_1_mouth-teeth_0: 1337906319
-      level_1_mouth-teeth_1: 1109299790
+      nerve_light_0: -429244803
+      nerve_light_1: -1964129514
+      nerve_light_2: -495745584
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

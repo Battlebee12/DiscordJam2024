@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8cdd615ccdecf4042b3291c280c15fa8
+guid: 2ac534b111f9c414f8ca9694bcdc1ac0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level_1_mouth-teeth_0
+      name: b_darts_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 24
-        height: 24
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39e60eee94a1b540bf620f874c2ea84
-      internalID: 1337906319
+      spriteID: 4748baccc2c419f4f80ad4e9c9c5d349
+      internalID: 1187274599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level_1_mouth-teeth_1
+      name: b_darts_1
       rect:
         serializedVersion: 2
-        x: 24
+        x: 16
         y: 0
-        width: 24
-        height: 24
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d6a307b95c7910469ad6ad622729fe4
-      internalID: 1109299790
+      spriteID: 4606e9bd668c3cd4293b3a4a22b39686
+      internalID: -2127898790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b_darts_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f0b144b8c5c20428c37eb3795c6b7c
+      internalID: -972951547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b_darts_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c348e0b98e0be84f89722ba736c61f4
+      internalID: -659105012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b_darts_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96ba7fe0a6342147b2598ada3fb612b
+      internalID: -603696427
       vertices: []
       indices: 
       edges: []
@@ -149,8 +212,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      level_1_mouth-teeth_0: 1337906319
-      level_1_mouth-teeth_1: 1109299790
+      b_darts_0: 1187274599
+      b_darts_1: -2127898790
+      b_darts_2: -972951547
+      b_darts_3: -659105012
+      b_darts_4: -603696427
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
