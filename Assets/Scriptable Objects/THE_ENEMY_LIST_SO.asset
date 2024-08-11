@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level1Enimies:
   - {fileID: 7448659077529702966, guid: ff22e885669f882478bfeb0fefd26a25, type: 3}
+  - {fileID: 647137389398300360, guid: f5552a1187077f74691bdf631115c6e1, type: 3}
   level2Enimies: []
   level3Enimies: []

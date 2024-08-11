@@ -10,7 +10,7 @@ public class Level1EnemyManager : MonoBehaviour
     
     public float spawnRadius = 10;
     public int maxEnimies = 7; 
-    public int spawnFrequency = 1;
+    public float spawnFrequency = 1;
     public int currentEnimies =0;
 
 

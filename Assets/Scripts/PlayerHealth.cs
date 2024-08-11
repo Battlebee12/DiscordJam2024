@@ -44,13 +44,22 @@ public class PlayerHealth : HealthEntity, IHasHealth
     }
     private void OnCollisionEnter2D(Collision2D other) {
 
-        Enemy enemy= other.gameObject.GetComponent<Enemy>( );
-        if(enemy!=null){
-            TookDamage(enemy.damaeAmount);
-            // Temp fix of destroying the enemy if it collides with player. 
-            //TODO: Call the future method that will dissolve the enemy in style.
-            Destroy(other.gameObject);
+        if(other.gameObject.CompareTag("ENEMY")){
+            Enemy enemy= other.gameObject.GetComponent<Enemy>( );
+            if(enemy!=null){
+                TookDamage(enemy.damaeAmount);
+                // Temp fix of destroying the enemy if it collides with player. 
+                //TODO: Call the future method that will dissolve the enemy in style.
+                Destroy(other.gameObject);
+            }
+
         }
+        if(other.gameObject.CompareTag("BOSS")){
+            TookDamage(30);
+
+        }
+
+        
         
     }
     

@@ -11,5 +11,8 @@ public class Projectiles : MonoBehaviour
      public void SetProjectileSO(ProjectileSO projectileSO){
         this.projectileSO = projectileSO;
      }
+     private void OnCollisionEnter2D(Collision2D other) {
+        Destroy(gameObject);
+     }
     
 }
